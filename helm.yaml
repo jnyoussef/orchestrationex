@@ -1,0 +1,40 @@
+apiVersion: v2
+name: my-chart
+description: A Helm chart for my application
+version: 1.0.0
+
+# Define the chart's dependencies (if any)
+dependencies:
+  - name: dependency-chart
+    version: 1.2.3
+    repository: https://charts.example.com
+
+# Define the chart's metadata
+metadata:
+  name: my-chart
+  version: 1.0.0
+  description: A Helm chart for my application
+
+# Define the chart's templates
+templates:
+  - name: deployment.yaml
+    content: |
+      # Add your deployment YAML here
+
+  - name: replica.yaml
+    content: |
+      # Add your replica YAML here
+
+  - name: volume.yaml
+    content: |
+      # Add your volume YAML here
+
+  - name: service.yaml
+    content: |
+      # Add your service YAML here
+
+  # Add more templates as needed
+
+# Define the chart's values
+values:
+  # Add your values here
